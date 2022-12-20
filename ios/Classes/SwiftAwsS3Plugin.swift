@@ -170,7 +170,7 @@ public class SwiftAwsS3Plugin: NSObject, FlutterPlugin {
                     let uploadedPercentage = Float(totalBytesSent) / (Float(bytesSent) + 0.1)
                     print("byte current \(totalBytesSent) byte total \(bytesSent) percentage \(uploadedPercentage)")
                     print(Int(uploadedPercentage))
-                    self.events!(Int(uploadedPercentage))
+                    self.events?(Int(uploadedPercentage))
                 })
             }
             
